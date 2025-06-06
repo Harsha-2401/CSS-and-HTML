@@ -1,0 +1,192 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:absolute;
+    height:100vh;
+    width:100vw;
+    background-image: url(login-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .description{
+    width:30%;
+    height:75%;
+    position:relative;
+}
+.container .loging{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    width:30%;
+    height:75%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.container .loging>img{
+    margin:1rem;
+}
+.container .loging h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    margin:0;
+}
+.container .loging >p{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    margin:0.5rem 0 0 0;
+}
+.container .loging >input{
+    margin:0 0 1rem 0;
+}
+.container .loging .emailHeading{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    width:92%;
+    display:flex;
+    justify-content: flex-start;
+}
+.container .loging .email{
+    border-radius: 5px;
+    width:90%;
+    padding:0.5rem;
+    border:1px solid gray;
+}
+.container .loging .passwordHeading{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    width:92%;
+    display:flex;
+    justify-content: space-between;
+}
+.container .loging .eye{
+    width:93%;
+    border:1px solid gray;
+    border-radius: 5px;
+    display:flex;
+    justify-content: space-between;
+    margin:0 0 1rem 0;
+}
+.container .loging .eye .password{
+    border:none;
+    outline: none;
+    width:100%;
+    padding:0.4rem;
+    margin:0.1rem;
+}
+.container .loging .signing-in{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 450;
+    width:94%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin:0 0 1rem 0;
+}
+.container .loging .login-button{
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(83,83,230,255);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:0.5rem;
+    border:none;
+    width:92%;
+    color:white;
+    background-color: blue;
+}
+.container .loging .or{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:95%;
+    margin:0.5rem 0 0.5rem 0;
+}
+.container .loging .platform-logo{
+    width:92%;
+    height:7%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:0 0 1rem 0;
+}
+.container .loging .platform-logo div{
+    font-family: "Roboto", sans-serif;
+    /* font-size: 15px; */
+    border-radius: 5px;
+    border:1px solid gray;
+    width:23%;
+    height:100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container .loging .platform-logo div img{
+    padding:0.5rem;
+}
+.container .loging .platform-logo div p{
+    font-size: 70%;
+}
+.container .loging .end{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .description .div1{
+    height:10%;
+    border-left: 1px solid gray;
+    margin-left: 1rem;
+}
+.container .description > h1{
+    font-family: "Roboto", sans-serif;
+    margin:0 0 0 1rem;
+}
+.container .description .div2{
+    height:20%;
+    border-left: 1px solid gray;
+    margin-left: 1rem;
+}
+.container .description .div3{
+    width:5%;
+    border-bottom: 1px solid gray;
+    margin:0.3rem 0 0.3rem 1.5rem;
+}
+.container .description .div4{
+    height:20%;
+    border-left: 1px solid gray;
+    margin-left: 1rem;
+}
+.container .description .div5{
+    width:5%;
+    border-bottom: 1px solid gray;
+    margin:0.3rem 0 0.3rem 1.5rem;
+}
+.container .description .div6{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width:70%;
+    position:absolute;
+    top:45%;
+    left:12%;
+}
+.container .description .div7{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width:70%;
+    position:absolute;
+    bottom:23%;
+    left:12%;
+}
