@@ -1,0 +1,67 @@
+body{
+    text-align:center;
+}
+div{
+    position:relative;
+    margin:7%;
+}
+[tooltip]:hover::after,[tooltip]:hover::before{
+    visibility:visible;
+}
+[tooltip]::after{
+    content:attr(tooltip);
+    padding:10px;
+    background-color:black;
+    color:white;
+    border-radius:6px;
+    visibility:hidden;
+    position:absolute;
+}
+[tooltip]::before{
+    content:"";
+    border-width:5px;
+    border-style:solid;
+    position:absolute;
+    visibility:hidden;
+}
+[tooltip-position="top"]::after{
+    bottom:150%;
+    transform:translate(-60%);
+}
+[tooltip-position="top"]::before{
+    border-color:black transparent transparent transparent;
+    bottom:100%;
+    transform:translate(70%);
+}
+div:not([tooltip-position])::after{
+    bottom:150%;
+    transform:translate(-80%);
+}
+div:not([tooltip-position])::before{
+    border-color:black transparent transparent transparent;
+    bottom:100%;
+    transform:translate(150%);
+}
+[tooltip-position="right"]::after{
+    transform:translate(7%,-20%);
+}
+[tooltip-position="right"]::before{
+    border-color:transparent black transparent transparent;
+    transform:translate(340%,30%);
+}
+[tooltip-position="bottom"]::after{
+    top:150%;
+    transform:translate(-80%,-22%);
+}
+[tooltip-position="bottom"]::before{
+    border-color:transparent transparent black transparent;
+    transform:translate(200%,110%);
+}
+[tooltip-position="left"]::after{
+    transform:translate(-128%,-20%);
+    visibility:hidden;
+}
+[tooltip-position="left"]::before{
+    border-color:transparent transparent transparent black;
+    transform:translate(-40%,40%);
+}

@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .first-half {
+    display: flex;
+    flex-direction: column;
+    background-color: #452b4e;
+}
+
+.container .first-half .f1 {
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+
+.container .first-half .f2 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .first-half .f2 .circle {
+    width: 60%;
+    height: 100%;
+    background-color: #ff805d;
+    border-radius: 50%;
+    position: relative;
+}
+
+.container .first-half .f3 {
+    position: relative;
+    height: 20%;
+    width: 100%;
+}
+
+.container .first-half .f1 h1 {
+    position: absolute;
+    top: 30%;
+    left: 26%;
+}
+
+.container .first-half .f1 p {
+    position: absolute;
+    top: 60%;
+    left: 26%;
+    font-size: 15px;
+}
+
+.container .first-half .f2 .circle .images .img1 {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    bottom: 4%;
+    left: 8%;
+    z-index: 1;
+}
+
+.container .first-half .f2 .circle .images .img2 {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 6%;
+    left: 42%;
+}
+
+.container .first-half .f3 .logo-1 {
+    position: absolute;
+    width: 17%;
+    height: 24%;
+    border-radius: 7px;
+    bottom: 30%;
+    left: 23%;
+}
+
+.container .first-half .f3 .logo-2 {
+    position: absolute;
+    width: 17%;
+    height: 24%;
+    left: 42%;
+    bottom: 30%;
+    border-radius: 7px;
+}
+
+.container .second-half {
+    display: flex;
+    align-items: center;
+    width: 53vw;
+    justify-content: center;
+}
+
+.container .second-half .s1 {
+    width: 50%;
+    height: 80%;
+}
+
+.container .second-half .s1 h1 {
+    margin-bottom: 1rem;
+}
+
+.container .second-half .s1 .s2 {
+    width: 100%;
+    padding-top: 2rem;
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .second-half .s1 .s2 .google,
+.container .second-half .s1 .s2 .facebook {
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    column-gap: 0.5rem;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.container .second-half .s1 .s2 img {
+    width: 19px;
+    height: 19px;
+}
+
+.container .second-half .s1 .s3 {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: space-around;
+}
+
+.container .second-half .s1 .s3 .division {
+    background-color: black;
+    border-radius: 0px;
+    width: 43%;
+    height: 0.5px;
+}
+
+.container .second-half .s1 .s3 p {
+    font-size: 13px;
+}
+
+.container .second-half .s1 .email-password {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    row-gap: 1rem;
+}
+
+.container .second-half .s1 .email-password .box {
+    padding: 0.8rem;
+    border-radius: 7px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.container .second-half .s1 .email-password .box i {
+    font-size: 16px;
+}
+
+.container .second-half .s1 .email-password .email-box {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 8% 92%;
+}
+
+.container .second-half .s1 .email-password .inputbox p {
+    font-size: 11px;
+}
+
+.container .second-half .s1 .email-password .inputbox input {
+    border: none;
+    background-color: transparent;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    outline: none;
+    width: 90%;
+}
+
+.container .second-half .s1 .email-password .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .second-half .s1 .email-password .password-box {
+    display: grid;
+    grid-template-columns: 8% 84% auto;
+}
+
+.container .second-half .s1 .email-password .password-box .inputbox {
+    padding-left: 1rem;
+}
+
+.container .second-half .s1 .email-password .password-box .eye {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .second-half .s1 .s4 {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .second-half .s1 .s4 .remember-box {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .second-half .s1 .s4 .remember-box label {
+    font-size: 12px;
+}
+
+.container .second-half .s1 button {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    background-color: #ff805d;
+    color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container .second-half .s1 .s5 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}

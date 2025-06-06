@@ -1,0 +1,210 @@
+:root{
+    --bg:white;
+    --icon:white;
+    --span:white;
+    --shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --footer:white;
+}
+body:has(#th:checked){
+    --bg:black;
+    --icon:black;
+    --span:black;
+    --shadow:rgba(238, 234, 234, 0.35) 0px 5px 15px;
+    --footer:black;
+}
+body>input:checked~ .container label>div input:checked~ .header{
+    background-color:black;
+}
+body>input:checked~ label i{
+    color:white;
+}
+body{
+    margin:0;
+    background-color:var(--bg);
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+body>label{
+    position:absolute;
+    left:50%;
+}
+body>input{
+    visibility:hidden;
+}
+.container label{
+    margin:15px 30px 15px 30px;
+}
+.container label>div{
+    width: 250px;
+    height:320px;
+    overflow:auto;
+    border-radius:5px;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    box-shadow: var(--shadow);
+}
+.container input{
+    position:absolute;
+    opacity:0;
+    right:1%;
+    top:1%;
+}
+.container label>div .cb{
+    border:3px solid var(--span);
+    border-radius: 2px;
+    height:12px;
+    width:12px;
+    position:absolute;
+    top:2%;
+    right:3%;
+}
+.container label>div .cb::after{
+    content:'\2713';
+    font-weight:bold;
+    font-size:15px;
+    position:absolute;
+    top:-50%;
+    visibility:hidden;
+}
+.container i{
+    padding:8px;
+}
+.container label>div .header i{
+    font-size:22px;
+}
+.container label>div:hover{
+    transform:scale(1.05,1.05);
+}
+.container label>div .header{
+    display:flex;
+    justify-content:space-between;
+    height:30%;
+}
+.container label .m1{
+    --box:rgb(189,7,30);
+}
+.container label .m2{
+    --box:rgb(59,89,154);
+}
+.container label .m3{
+    --box:rgb(193,53,132);
+}
+.container label .m4{
+    --box:rgb(24,105,255);
+}
+.container label .m5{
+    --box:rgb(234,76,136);
+}
+.container label .m6{
+    --box:rgb(28,161,241);
+}
+.container label .m7{
+    --box:rgb(245,127,1);
+}
+.container label .m8{
+    --box:rgb(1,119,182);
+}
+.container label>div .h1{
+    background-color:var(--box);
+}
+.container label>div .h2{
+    background-color:var(--box);
+}
+.container label>div .h3{
+    background-color:var(--box);
+}
+.container label>div .h4{
+    background-color:var(--box);
+}
+.container label>div .h5{
+    background-color:var(--box);
+}
+.container label>div .h6{
+    background-color:var(--box);
+}
+.container label>div .h7{
+    background-color:var(--box);
+}
+.container label>div .h8{
+    background-color:var(--box);
+}
+.container label>div .footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:70%;
+    background-color:var(--footer);
+}
+.container label>div .profile{
+    width:30%;
+    height:23%;
+    position:absolute;
+    transform:translate(105%,70%);
+    background-color:white;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow: var(--box) 0px 2px 4px;
+    background-image:url("profilepic.jpg");
+    background-size:cover;
+    /* rgba(0, 0, 0, 0.24) */
+}
+.container label>div .footer .intro{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+.container label>div .footer .intro h3{
+    margin-top:3rem;
+    font-family:"playball";
+    color:rgb(145,145,145);
+}
+.container label>div .footer .intro p{
+    color:rgb(119, 116, 116);
+    font-family:"nunito sans";
+    font-size:13px;
+    overflow:auto;
+    /* scrollbar-width: none; */
+}
+p::-webkit-scrollbar{
+    visibility:hidden;
+}
+.container label>div .header i{
+    color:var(--icon);
+}
+.container label>div .footer .icons{
+    color:rgb(119, 116, 116);
+}
+.container label input:checked .header{
+    background-color:white;
+}
+.container label>div input:checked~ .footer{
+    background-color:var(--box);
+}
+.container label>div input:checked~ .header{
+    background-color:white;
+}
+.container label>div input:checked~ .header i{
+    color:var(--box);
+}
+.container label>div input:checked~ .cb{
+    border-color:var(--box);
+}
+.container label>div input:checked~ .cb::after{
+    visibility:visible;
+    color:var(--box);
+}
+.container label>div input:checked~ .footer .intro h3,.container label>div input:checked~ .footer .intro p{
+    color:white;
+}
+.container label>div input:checked~ .footer .icons i{
+    color:white;
+}
